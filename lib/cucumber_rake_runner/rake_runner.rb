@@ -10,7 +10,7 @@ class RakeRunner
       ARGV.clear # Necessary to remove command line parameters built
       # into jruby which are then parsed by the setup of the Rake
       # application object
-      app.handle_options
+      app.handle_options([])
       app.load_rakefile
     end
   end
